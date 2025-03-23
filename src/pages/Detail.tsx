@@ -53,7 +53,7 @@ const Detail = () => {
     isLoading,
     isError,
   } = useQuery<DetailInterface>({
-    queryKey: ["characters"],
+    queryKey: ["characters", id],
     queryFn: fetchCharacterDetail,
   });
 

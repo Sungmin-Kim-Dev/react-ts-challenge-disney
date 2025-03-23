@@ -63,7 +63,7 @@ const Home = () => {
     isLoading,
     isError,
   } = useQuery<CharacterInterface[]>({
-    queryKey: ["characters"],
+    queryKey: ["charactersList"],
     queryFn: fetchCharacterList,
   });
 
